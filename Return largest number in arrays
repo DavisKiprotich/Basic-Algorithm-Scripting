@@ -1,0 +1,17 @@
+function largestOfFour(arr) {
+  let largestOne = [];
+  for(let i = 0;i < arr.length;i++){
+    let highestArr = arr[i];
+    let individualVal = -Infinity;
+    for(let j = 0;j < highestArr.length;j++){
+      if(individualVal < highestArr[j]){
+        individualVal = highestArr[j];
+
+      }
+    
+    }
+    largestOne.push(individualVal);
+  }
+  
+  return largestOne;
+}
