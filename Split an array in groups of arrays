@@ -1,0 +1,26 @@
+//  using slice() method
+function chunkArrayInGroups(arr, size) {
+  let group =[];
+  while(arr.length > 0){
+    group.push(arr.slice(0,size))
+    arr = arr.slice(size);
+    
+  }
+  return group;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+// Using splice method
+
+function chunkArrayInGroups(arr, size) {
+  let group =[];
+  while(arr.length > 0){
+    group.push(arr.splice(0,size))
+    
+    
+  }
+  return group;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
